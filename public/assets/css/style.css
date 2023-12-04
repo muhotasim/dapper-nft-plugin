@@ -1,0 +1,368 @@
+/*
+  Theme Name: Dapper - NFT Drop / Collection Template
+  Support: admin@gmail.com
+  Description: Dapper - NFT Drop / Collection Template
+  Version: 1.0
+*/
+
+/* CSS INDEX
+-----------------------------------
+1. Theme default css
+2. header
+3. slider
+4. about-area
+5. features-box
+6. department
+7. team
+8. video-area
+9. counter
+10. footer
+*/
+
+
+
+/*=============================================
+	=              DEFAULT             =
+=============================================*/
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700;800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+body {
+	font-family: 'Poppins', sans-serif;
+	font-weight: normal;
+	font-size: 15px;
+	color: #fff;
+	font-style: normal;
+}
+img,
+.img {
+	max-width: 100%;
+	transition: all 0.3s ease-out 0s;
+}
+.f-left {
+	float: left
+}
+.f-right {
+	float: right
+}
+.fix {
+	overflow: hidden
+}
+a,
+button {
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+	text-decoration: none;
+}
+a:focus,
+.btn:focus,
+button:focus {
+	text-decoration: none;
+	outline: none;
+	box-shadow: none;
+}
+
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+	color: #2B96CC;
+	text-decoration: none;
+}
+a,
+button {
+	color: #1696e7;
+	outline: medium none;
+	text-decoration: none;
+}
+.btn:focus,
+button:focus,
+input:focus,
+input:focus,
+textarea,
+textarea:focus {
+	outline: 0
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Oxanium', sans-serif;
+	color: #fff;
+	margin-top: 0px;
+	font-style: normal;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+}
+h1 {
+	font-size: 40px;
+}
+h2 {
+	font-size: 35px;
+}
+h3 {
+	font-size: 28px;
+}
+h4 {
+	font-size: 22px;
+}
+h5 {
+	font-size: 18px;
+}
+h6 {
+	font-size: 16px;
+}
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+li {
+	list-style: none
+}
+p {
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 28px;
+	color: #a2aac0;
+	margin-bottom: 15px;
+}
+hr {
+	border-bottom: 1px solid #eceff8;
+	border-top: 0 none;
+	margin: 30px 0;
+	padding: 0;
+}
+label {
+	color: #a2aac0;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+}
+*::-moz-selection {
+	background: #d6b161;
+	color: #fff;
+	text-shadow: none;
+}
+::-moz-selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+::selection {
+	background: #444;
+	color: #fff;
+	text-shadow: none;
+}
+*::-moz-placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+*::placeholder {
+	color: #555555;
+	font-size: 14px;
+	opacity: 1;
+}
+.theme-overlay {
+	position: relative
+}
+.theme-overlay::before {
+	background: #2081e2 none repeat scroll 0 0;
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.separator {
+	border-top: 1px solid #f2f2f2
+}
+
+/*=============================================
+	=          BUTTON STYLE          =
+=============================================*/
+.btn {
+    user-select: none;
+    -moz-user-select: none;
+    background: #2081e2 none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 0;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1;
+    margin-bottom: 0;
+    padding: 20px 34px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transition: all 0.3s ease 0s;
+    vertical-align: middle;
+    white-space: break-spaces;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    z-index: 1;
+}
+.btn:hover {
+    color: #ffffff;
+    background: #18203e;
+}
+.btn__two {
+	background: #bb86fc;
+}
+.breadcrumb > .active {
+	color: #888;
+}
+
+
+/*=============================================
+	=             HEADER               =
+=============================================*/
+.custom-container {
+    max-width: 1330px;
+}
+.transparent__header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    height: auto;
+    background: #02071b;
+    border-bottom: 1px solid #0f1735;
+	padding: 25px 0;
+}
+.menu__nav {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+.navbar__wrap {
+	display: flex;
+	flex-grow: 1;
+}
+.logo img {
+    max-width: 140px;
+}
+.header__button {
+    margin-left: auto;
+}
+
+/*=============================================
+	=                MAIN           =
+=============================================*/
+.main--bg {
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.banner__wrapper {
+    min-height: calc(100vh);
+    display: flex;
+    align-items: center;
+    padding: 106px 0 0;
+}
+.banner--title {
+    font-size: 50px;
+    letter-spacing: -1px;
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 12px;
+}
+.banner--title > span {
+	color: #2081e2;
+}
+.banner__content--wrap p {
+    margin: 0 0 0;
+}
+.banner__img {
+    margin-left: 100px;
+}
+.banner__img img {
+    border-radius: 30px;
+}
+.banner__price--wrap {
+    margin: 40px 0 30px;
+}
+.banner__price--wrap .price__title {
+    line-height: 1;
+    margin: 0 0 10px 0;
+    opacity: .95;
+}
+.banner__price--wrap .price {
+    color: #2081e2;
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+}
+.banner__btn--wrap {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.banner__btn--wrap .btn {
+    margin: 15px 0 0 0;
+}
+.banner__btn--wrap .btn__two {
+	margin-right: 20px;
+	min-width: 130px;
+}
+.banner__btn--wrap .opensea__btn {
+    padding: 15px 25px 15px 20px;
+}
+.banner__btn--wrap .opensea__btn img {
+    max-width: 25px;
+    margin-right: 6px;
+}
+
+
+
+/* modal style */
+.modal-body {
+    text-align: center;
+    height: 250px;
+}
+
+
+.modal-header .text-dark.modal-title.h4 {
+    width: 100%;
+	text-align: center;
+}
+
+.text-danger.modal-body {
+    font-size: 30px;
+    color: #eb9378;
+    margin-top: 100px;
+}
+
+.modal-content {
+    background: #0a0b14;
+}
+
+.modal-header {
+    background: #fefefe;
+}
